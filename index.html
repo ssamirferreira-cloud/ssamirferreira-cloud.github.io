@@ -70,6 +70,8 @@ header{background:var(--marinho);color:var(--branco);position:sticky;top:0;z-ind
 /* Serviços */
 .grid-serv{display:grid;grid-template-columns:repeat(6,1fr);gap:22px}
 .serv{grid-column:span 2;border:1px solid var(--linha);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;background:var(--branco);min-width:0}
+.foto{display:block;width:calc(100% + 56px);max-width:none;height:auto;margin:-28px -28px 4px;aspect-ratio:2.2/1;object-fit:cover;object-position:center top}
+.serv{overflow:hidden}
 .serv.destaque{border-color:var(--cobalto);box-shadow:0 10px 30px -18px rgba(31,94,219,.6)}
 .ico{width:46px;height:46px;border-radius:12px;background:var(--cobalto-claro);display:grid;place-items:center;color:var(--cobalto)}
 .ico svg{width:24px;height:24px}
@@ -173,43 +175,42 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     </div>
     <div class="grid-serv">
       <article class="serv destaque">
-        <span class="tag">Mais procurado</span>
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M6 16V9"/><path d="M12 16V5"/><path d="M18 16v-4"/></svg></div>
+        <img class="foto" src="img/consultoria.webp" alt="Consultor analisando indicadores de TI em um notebook" width="400" height="191" loading="lazy">
         <h3>Consultoria de TI para PMEs</h3>
         <p>Um gestor de TI experiente para a sua empresa, sem o custo de uma contratação.</p>
         <ul><li>Planejamento e prioridades de TI</li><li>Escolha de sistemas e fornecedores</li><li>Reuniões mensais de acompanhamento</li></ul>
         <div class="modelo">Mensalidade <span>+ projetos específicos</span></div>
       </article>
       <article class="serv">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></div>
+        <img class="foto" src="img/suporte.webp" alt="Headset de suporte técnico ao lado de um notebook" width="400" height="191" loading="lazy">
         <h3>Suporte técnico remoto e presencial</h3>
         <p>Atendimento rápido para a sua equipe continuar trabalhando, à distância ou no local.</p>
         <ul><li>Computadores, notebooks e servidores</li><li>Redes, rede Wi-Fi e firewall</li><li>Microsoft 365 (e-mail, Teams, OneDrive)</li><li>Suporte ao usuário final</li></ul>
         <div class="modelo">Contrato mensal <span>ou atendimento avulso</span></div>
       </article>
       <article class="serv">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 7V3"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/></svg></div>
+        <img class="foto" src="img/ia.webp" alt="Notebook com chip de inteligência artificial" width="400" height="191" loading="lazy">
         <h3>Automação e Inteligência Artificial</h3>
         <p>Soluções com IA para reduzir trabalho manual e organizar informações.</p>
         <ul><li>Relatórios gerados automaticamente</li><li>Processos administrativos automatizados</li><li>Assistentes de IA para a equipe</li></ul>
         <div class="modelo">Implantação <span>+ manutenção mensal</span></div>
       </article>
       <article class="serv">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+        <img class="foto" src="img/seguranca.webp" alt="Escudo de segurança com cadeado sobre um teclado" width="400" height="191" loading="lazy">
         <h3>Segurança da Informação</h3>
         <p>Proteção prática contra os ataques mais comuns em empresas.</p>
         <ul><li>Diagnóstico de segurança</li><li>MFA e políticas de acesso</li><li>Orientação sobre a LGPD</li></ul>
         <div class="modelo">Avaliação inicial <span>+ contrato recorrente</span></div>
       </article>
       <article class="serv">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg></div>
+        <img class="foto" src="img/gestao.webp" alt="Painel de gestão de equipamentos e checklist" width="400" height="191" loading="lazy">
         <h3>Gestão de tecnologia e fornecedores</h3>
         <p>Controle de equipamentos, contratos, licenças Microsoft 365, custos e renovação do parque tecnológico.</p>
         <ul><li>Inventário de equipamentos e licenças</li><li>Negociação com fornecedores</li><li>Projetos de redução de custos</li></ul>
         <div class="modelo">Gestão mensal <span>+ projetos de redução de custos</span></div>
       </article>
       <article class="serv">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 2.2 3 5 3s5-1.5 5-3v-5"/></svg></div>
+        <img class="foto" src="img/treinamentos.webp" alt="Instrutor apresentando treinamento de cibersegurança" width="400" height="191" loading="lazy">
         <h3>Treinamentos corporativos</h3>
         <p>Capacitação da equipe em cibersegurança, uso seguro de IA, Microsoft 365 e boas práticas digitais.</p>
         <ul><li>Turmas presenciais ou online</li><li>Simulações de phishing</li><li>Programas anuais de conscientização</li></ul>
