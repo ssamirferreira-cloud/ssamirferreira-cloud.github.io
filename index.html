@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SF Tecnologia | Consultoria de TI, Segurança e IA para PMEs</title>
+<meta name="description" content="Consultoria de TI, segurança da informação, automação com IA, gestão de tecnologia e treinamentos para pequenas e médias empresas.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='11' fill='%2310233F'/%3E%3Cpath d='M33 14H19a5 5 0 0 0-5 5v0a5 5 0 0 0 5 5h10a5 5 0 0 1 5 5v0a5 5 0 0 1-5 5H15' fill='none' stroke='%23fff' stroke-width='4.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='34.5' cy='14' r='3.6' fill='%231FA971'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: faixa marinho no topo, seções claras alternadas, grade de serviços 3/2/1 colunas */
+:root{
+  --marinho:#10233F; --marinho-2:#18335A; --cobalto:#1F5EDB; --cobalto-claro:#DCE7FB;
+  --verde:#1FA971; --nevoa:#F4F6FA; --linha:#DDE3EC; --texto:#1B2433; --texto-2:#566377; --branco:#FFFFFF;
+  --f-titulo:"Manrope", "Segoe UI", system-ui, sans-serif;
+  --f-texto:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--branco);color:var(--texto);font:16px/1.65 var(--f-texto)}
+img,svg{max-width:100%}
+a{color:var(--cobalto)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--verde);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-titulo);line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.7rem,3.2vw,2.3rem);font-weight:800;color:var(--marinho)}
+h3{font-size:1.15rem;font-weight:700;color:var(--marinho)}
+p{margin:0}
+.rotulo{font:500 .78rem/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--cobalto)}
+.sec{padding-block:88px}
+.sec-head{display:grid;gap:14px;max-width:640px;margin-bottom:44px}
+.sec-head p{color:var(--texto-2);font-size:1.05rem}
+
+/* Topo */
+header{background:var(--marinho);color:var(--branco);position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:16px}
+.marca{display:flex;align-items:center;gap:12px;color:var(--branco);text-decoration:none}
+.marca svg{width:38px;height:38px;flex:none}
+.marca b{font:800 1.25rem/1 var(--f-titulo);letter-spacing:-.01em}
+.marca span{font:500 1.25rem/1 var(--f-titulo);opacity:.8}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav ul a{color:#C9D4E5;text-decoration:none;font-weight:500;font-size:.95rem}
+.nav ul a:hover{color:var(--branco)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 .98rem/1 var(--f-texto);padding:14px 22px;border-radius:10px;text-decoration:none;border:0;cursor:pointer}
+.btn-verde{background:var(--verde);color:var(--branco)}
+.btn-verde:hover{background:#178f5f}
+.btn-linha{border:1.5px solid #4A6189;color:var(--branco)}
+.btn-linha:hover{border-color:var(--branco)}
+.nav .btn{padding:11px 18px;font-size:.9rem}
+
+/* Hero */
+.hero{background:var(--marinho);color:var(--branco);padding-block:72px 96px;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.02em;color:var(--branco)}
+.hero h1 em{font-style:normal;color:#7FB0FF}
+.hero p.lead{font-size:1.15rem;color:#C9D4E5;margin-top:22px;max-width:34em}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero .rotulo{color:#7FB0FF;margin-bottom:18px;display:block}
+.painel{background:var(--marinho-2);border:1px solid #2A4775;border-radius:16px;padding:26px;font-family:var(--f-mono);font-size:.86rem;color:#C9D4E5;min-width:0}
+.painel .tit{display:flex;justify-content:space-between;color:#8EA3C4;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
+.check{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #2A4775}
+.check b{font-weight:500;color:var(--branco)}
+.ok{color:var(--verde)} .at{color:#F2B84B}
+
+/* Serviços */
+.grid-serv{display:grid;grid-template-columns:repeat(6,1fr);gap:22px}
+.serv{grid-column:span 2;border:1px solid var(--linha);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;background:var(--branco);min-width:0}
+.serv.destaque{border-color:var(--cobalto);box-shadow:0 10px 30px -18px rgba(31,94,219,.6)}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--cobalto-claro);display:grid;place-items:center;color:var(--cobalto)}
+.ico svg{width:24px;height:24px}
+.serv p{color:var(--texto-2)}
+.serv ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:.95rem}
+.serv li{padding-left:22px;position:relative}
+.serv li::before{content:"";position:absolute;left:2px;top:.6em;width:9px;height:5px;border-left:2px solid var(--verde);border-bottom:2px solid var(--verde);transform:rotate(-45deg)}
+.modelo{margin-top:auto;padding-top:14px;border-top:1px dashed var(--linha);font:500 .8rem/1.4 var(--f-mono);color:var(--marinho)}
+.modelo span{color:var(--texto-2)}
+.tag{align-self:flex-start;font:500 .7rem/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;background:var(--cobalto);color:var(--branco);padding:6px 9px;border-radius:999px}
+
+/* Processo */
+.processo{background:var(--nevoa)}
+.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:p}
+.passo{display:grid;gap:10px;align-content:start}
+.passo .n{font:800 1rem/1 var(--f-titulo);color:var(--branco);background:var(--marinho);width:40px;height:40px;border-radius:50%;display:grid;place-items:center}
+.passo p{color:var(--texto-2);font-size:.97rem}
+
+/* Sobre */
+.sobre .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.sobre p{color:var(--texto-2);font-size:1.05rem}
+.sobre .txt{display:grid;gap:16px}
+.valores{display:grid;gap:14px}
+.valor{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:20px;border-radius:12px;background:var(--nevoa)}
+.valor .ico{background:var(--branco)}
+.valor p{font-size:.95rem}
+
+/* Contato */
+.contato{background:var(--marinho);color:var(--branco)}
+.contato h2{color:var(--branco)}
+.contato .sec-head p{color:#C9D4E5}
+.contato .rotulo{color:#7FB0FF}
+.cards-contato{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cc{background:var(--marinho-2);border:1px solid #2A4775;border-radius:14px;padding:26px;display:grid;gap:8px;text-decoration:none;color:var(--branco);min-width:0}
+.cc:hover{border-color:#7FB0FF}
+.cc small{font:500 .75rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:#8EA3C4}
+.cc b{font:700 1.1rem/1.3 var(--f-titulo);overflow-wrap:anywhere}
+footer{background:#0B1A30;color:#8EA3C4;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:26px}
+
+@media (max-width:920px){
+  .hero .wrap,.sobre .wrap{grid-template-columns:1fr}
+  .grid-serv{grid-template-columns:1fr 1fr}
+  .serv{grid-column:span 1}
+  .passos{grid-template-columns:1fr 1fr}
+  .cards-contato{grid-template-columns:1fr}
+  .nav ul{display:none}
+}
+@media (max-width:600px){
+  .grid-serv,.passos{grid-template-columns:1fr}
+  .sec{padding-block:64px}
+  .nav .btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap nav" aria-label="Principal">
+    <a class="marca" href="#inicio" aria-label="SF Tecnologia, início">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#1F5EDB"/><path d="M33 14H19a5 5 0 0 0-5 5v0a5 5 0 0 0 5 5h10a5 5 0 0 1 5 5v0a5 5 0 0 1-5 5H15" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.5" cy="14" r="3.6" fill="#1FA971"/></svg>
+      <div><b>SF</b> <span>Tecnologia</span></div>
+    </a>
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#como">Como trabalhamos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-verde" href="https://wa.me/5511997812985?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20SF%20Tecnologia." target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </nav>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="rotulo">Consultoria de TI para pequenas e médias empresas</span>
+      <h1>A tecnologia da sua empresa <em>sob controle</em>, sem precisar de um departamento de TI.</h1>
+      <p class="lead">A SF Tecnologia atua como o gestor de TI da sua empresa: dá suporte à sua equipe, organiza fornecedores e licenças, protege seus dados e usa IA para tirar tarefas repetitivas da sua equipe.</p>
+      <div class="acoes">
+        <a class="btn btn-verde" href="https://wa.me/5511997812985?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico." target="_blank" rel="noopener">Agendar diagnóstico gratuito</a>
+        <a class="btn btn-linha" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+    <div class="painel" aria-label="Exemplo de diagnóstico de TI">
+      <div class="tit"><span>Diagnóstico de TI</span><span>exemplo</span></div>
+      <div class="check"><b>MFA nas contas Microsoft 365</b><span class="at">pendente</span></div>
+      <div class="check"><b>Backup testado este mês</b><span class="ok">ok</span></div>
+      <div class="check"><b>Licenças sem uso</b><span class="at">7 encontradas</span></div>
+      <div class="check"><b>Contratos de fornecedores</b><span class="ok">revisados</span></div>
+      <div class="check"><b>Relatório semanal automatizado</b><span class="ok">ativo</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="rotulo">Serviços</span>
+      <h2>Tudo o que a TI de uma empresa em crescimento precisa</h2>
+      <p>Contratos mensais, com atendimento remoto e visitas quando necessário. Você contrata o que faz sentido hoje e amplia depois.</p>
+    </div>
+    <div class="grid-serv">
+      <article class="serv destaque">
+        <span class="tag">Mais procurado</span>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M6 16V9"/><path d="M12 16V5"/><path d="M18 16v-4"/></svg></div>
+        <h3>Consultoria de TI para PMEs</h3>
+        <p>Um gestor de TI experiente para a sua empresa, sem o custo de uma contratação.</p>
+        <ul><li>Planejamento e prioridades de TI</li><li>Escolha de sistemas e fornecedores</li><li>Reuniões mensais de acompanhamento</li></ul>
+        <div class="modelo">Mensalidade <span>+ projetos específicos</span></div>
+      </article>
+      <article class="serv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></div>
+        <h3>Suporte técnico remoto e presencial</h3>
+        <p>Atendimento rápido para a sua equipe continuar trabalhando, à distância ou no local.</p>
+        <ul><li>Computadores, notebooks e servidores</li><li>Redes, rede Wi-Fi e firewall</li><li>Microsoft 365 (e-mail, Teams, OneDrive)</li><li>Suporte ao usuário final</li></ul>
+        <div class="modelo">Contrato mensal <span>ou atendimento avulso</span></div>
+      </article>
+      <article class="serv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 7V3"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/></svg></div>
+        <h3>Automação e Inteligência Artificial</h3>
+        <p>Soluções com IA para reduzir trabalho manual e organizar informações.</p>
+        <ul><li>Relatórios gerados automaticamente</li><li>Processos administrativos automatizados</li><li>Assistentes de IA para a equipe</li></ul>
+        <div class="modelo">Implantação <span>+ manutenção mensal</span></div>
+      </article>
+      <article class="serv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+        <h3>Segurança da Informação</h3>
+        <p>Proteção prática contra os ataques mais comuns em empresas.</p>
+        <ul><li>Diagnóstico de segurança</li><li>MFA e políticas de acesso</li><li>Orientação sobre a LGPD</li></ul>
+        <div class="modelo">Avaliação inicial <span>+ contrato recorrente</span></div>
+      </article>
+      <article class="serv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg></div>
+        <h3>Gestão de tecnologia e fornecedores</h3>
+        <p>Controle de equipamentos, contratos, licenças Microsoft 365, custos e renovação do parque tecnológico.</p>
+        <ul><li>Inventário de equipamentos e licenças</li><li>Negociação com fornecedores</li><li>Projetos de redução de custos</li></ul>
+        <div class="modelo">Gestão mensal <span>+ projetos de redução de custos</span></div>
+      </article>
+      <article class="serv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 2.2 3 5 3s5-1.5 5-3v-5"/></svg></div>
+        <h3>Treinamentos corporativos</h3>
+        <p>Capacitação da equipe em cibersegurança, uso seguro de IA, Microsoft 365 e boas práticas digitais.</p>
+        <ul><li>Turmas presenciais ou online</li><li>Simulações de phishing</li><li>Programas anuais de conscientização</li></ul>
+        <div class="modelo">Por turma <span>ou programa anual</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec processo" id="como">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="rotulo">Como trabalhamos</span>
+      <h2>Do diagnóstico ao acompanhamento mensal</h2>
+    </div>
+    <div class="passos">
+      <div class="passo"><span class="n">1</span><h3>Diagnóstico</h3><p>Levantamos equipamentos, contas, contratos e riscos da sua operação.</p></div>
+      <div class="passo"><span class="n">2</span><h3>Plano de ação</h3><p>Você recebe as prioridades em linguagem simples, com custos e prazos.</p></div>
+      <div class="passo"><span class="n">3</span><h3>Implantação</h3><p>Colocamos as melhorias em prática e coordenamos os fornecedores.</p></div>
+      <div class="passo"><span class="n">4</span><h3>Acompanhamento</h3><p>Relatórios e reuniões mensais para manter tudo funcionando.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sobre" id="sobre">
+  <div class="wrap">
+    <div class="txt">
+      <span class="rotulo">Sobre a SF Tecnologia</span>
+      <h2>TI de grande empresa, no tamanho da sua</h2>
+      <p>A SF Tecnologia foi criada por Samir Ferreira para dar às pequenas e médias empresas a orientação de um gestor de TI experiente, sem o custo de manter uma equipe interna.</p>
+      <p>Cuidamos da tecnologia para que você cuide do negócio: menos imprevistos, custos sob controle, dados protegidos e uma equipe que usa bem as ferramentas que já tem.</p>
+    </div>
+    <div class="valores">
+      <div class="valor"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h3>Clareza</h3><p>Explicamos cada decisão sem jargão técnico.</p></div></div>
+      <div class="valor"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg></div><div><h3>Segurança</h3><p>Proteção de dados em cada projeto que entregamos.</p></div></div>
+      <div class="valor"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-8"/></svg></div><div><h3>Resultado</h3><p>Melhorias que se medem em tempo e dinheiro economizados.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contato" id="contato">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="rotulo">Contato</span>
+      <h2>Vamos conversar sobre a TI da sua empresa</h2>
+      <p>Fale com Samir Ferreira e agende um diagnóstico inicial sem compromisso.</p>
+    </div>
+    <div class="cards-contato">
+      <a class="cc" href="https://wa.me/5511997812985?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20SF%20Tecnologia." target="_blank" rel="noopener"><small>WhatsApp</small><b>(11) 99781-2985</b></a>
+      <a class="cc" href="mailto:samir.ferreira@sftecnologia.com"><small>E-mail</small><b>samir.ferreira@sftecnologia.com</b></a>
+      <a class="cc" href="tel:+5511997812985"><small>Telefone</small><b>(11) 99781-2985</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 SF Tecnologia. Todos os direitos reservados.</span>
+    <span>sftecnologia.com</span>
+  </div>
+</footer>
+</body>
+</html>
