@@ -8,15 +8,15 @@
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAkFBMVEUQIj4QJUL8/PwJGTQAl/oAiPoMN2tqdYamrLYApf8JSZAJVZIQMlUAd/lLWW6utLwLRXYAZvlXZHcHZ6y2usN5g5KDjJoEa88FdboDhtgACykJOYo1RFyRmabEydCboq29wskEeNInNk7S1doHW6gDVtXp6uwMLGEIYZoGSbc6SmFhbH8CXOuIkZ7e4OQAAAD7WhCHAAAAMHRSTlP//////////////////////////////////////////////////////////////wBipdB4AAAC0klEQVR42u1W2XbaMBDVdGyZWMIYBNhsIawhSdv//7zOSMJItmlon7mHByP5zr5YiCeeeOIBAOM/7uL7/hdBIKKAu2S+RifFP7X5kOdK36ETG7Qy9SJNCIudKSFWxmJzupLYz9ZlvUheGMmiNhdljImVsVFVmu566VDWnlwrae1nF3QZSIBSqZI8KFsxYLq+pERNiF1CEwXn1PVlQE2uKeSzdly1IeX8u2hPDoQ3j5inaUpRifVTWECRZtaugBXeLQAhlcplnstQAqkvFw0d2rgWxvUfwng8zDE0C4z1/aXW2ANfDjesxuMx3CyguHj1JV2us+0gwmhGASvmwclWrlYysB8lV0zyUrPzgx8drHH9Fh0cKAchv7R8To2A1y7/c7k+xye/wiBf9ZP55GmP/i8UbalFFD9tS54Km/if9n6bBZiQ//Z0czuLU7xL0jRJNQkFnPGb82WcApy3T8OyQJUyJBvlPZgsowQC2gjug8Oor4fMd0XhX/0995hlazZgzyE8T4oGEBtAEowTCrhtR3C6v4bghtfIhGpI8EUFuO7k4AC4aR3NQgGa+U1VAxaHtoQJ/i2JKIlfhUkVRTbzcJozcL40GARNwALCtoKoa5Y2IoUNwaA/iUJIaqumsd0wvsHmRFtDMoyaOwhi0JdUlJMQIxfyg+snsHOpM98xbwTQUOjppGJvc+FnptTdZXLyLoA3OcZmmdnuQDuxaRB3JxycTrw2oK+Tzxni1IWA6MdKIvRJ+FjZPvh6G8XYZNRhsJmOpqM9ymNaAULvlMV3yeER3VkofFohr7hf7ixTALdPoQ+8PkpD7W4A76/znhtPduwkIe8FPPI1EWpGkGrH7NRIRIDv2NHuFUSuhm69H/W3dJbwLlfSKZcyPxLZsfnb4AG6FSFXH6eftLLsiCLsjN3v4jE6hwitHblFKf1X0IP0Jg5h0/4LuS8Tz8/cJ554HH8AkPMoMtw8aKMAAAAASUVORK5CYII=">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: faixa marinho no topo, seções claras alternadas, grade de serviços 3/2/1 colunas */
 :root{
-  --marinho:#10233F; --marinho-2:#18335A; --cobalto:#1F5EDB; --cobalto-claro:#DCE7FB;
-  --verde:#1FA971; --nevoa:#F4F6FA; --linha:#DDE3EC; --texto:#1B2433; --texto-2:#566377; --branco:#FFFFFF;
+  --marinho:#10223E; --marinho-2:#18335A; --cobalto:#2563EB; --cobalto-claro:#DCE7FB;
+  --verde:#16A878; --nevoa:#F5F7FB; --linha:#DDE3EC; --texto:#1B2433; --texto-2:#566377; --branco:#FFFFFF;
   --f-titulo:"Manrope", "Segoe UI", system-ui, sans-serif;
-  --f-texto:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --f-mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --f-texto:"Inter", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"Inter", "Segoe UI", system-ui, sans-serif;
   color-scheme: light;
 }
 *{box-sizing:border-box}
@@ -48,7 +48,7 @@ header{background:var(--marinho);color:var(--branco);position:sticky;top:0;z-ind
 .nav ul a:hover{color:var(--branco)}
 .btn{display:inline-flex;align-items:center;gap:10px;font:600 .98rem/1 var(--f-texto);padding:14px 22px;border-radius:10px;text-decoration:none;border:0;cursor:pointer}
 .btn-verde{background:var(--verde);color:var(--branco)}
-.btn-verde:hover{background:#178f5f}
+.btn-verde:hover{background:#128F66}
 .btn-linha{border:1.5px solid #4A6189;color:var(--branco)}
 .btn-linha:hover{border-color:var(--branco)}
 .nav .btn{padding:11px 18px;font-size:.9rem}
@@ -57,10 +57,10 @@ header{background:var(--marinho);color:var(--branco);position:sticky;top:0;z-ind
 .hero{background:var(--marinho);color:var(--branco);padding-block:72px 96px;overflow:hidden;position:relative}
 .hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center}
 .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.02em;color:var(--branco)}
-.hero h1 em{font-style:normal;color:#7FB0FF}
+.hero h1 em{font-style:normal;color:#80AEFF}
 .hero p.lead{font-size:1.15rem;color:#C9D4E5;margin-top:22px;max-width:34em}
 .hero .acoes{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-.hero .rotulo{color:#7FB0FF;margin-bottom:18px;display:block}
+.hero .rotulo{color:#80AEFF;margin-bottom:18px;display:block}
 .painel{background:var(--marinho-2);border:1px solid #2A4775;border-radius:16px;padding:26px;font-family:var(--f-mono);font-size:.86rem;color:#C9D4E5;min-width:0}
 .painel .tit{display:flex;justify-content:space-between;color:#8EA3C4;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
 .check{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #2A4775}
@@ -103,10 +103,10 @@ header{background:var(--marinho);color:var(--branco);position:sticky;top:0;z-ind
 .contato{background:var(--marinho);color:var(--branco)}
 .contato h2{color:var(--branco)}
 .contato .sec-head p{color:#C9D4E5}
-.contato .rotulo{color:#7FB0FF}
+.contato .rotulo{color:#80AEFF}
 .cards-contato{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .cc{background:var(--marinho-2);border:1px solid #2A4775;border-radius:14px;padding:26px;display:grid;gap:8px;text-decoration:none;color:var(--branco);min-width:0}
-.cc:hover{border-color:#7FB0FF}
+.cc:hover{border-color:#80AEFF}
 .cc small{font:500 .75rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:#8EA3C4}
 .cc b{font:700 1.1rem/1.3 var(--f-titulo);overflow-wrap:anywhere}
 footer{background:#0B1A30;color:#8EA3C4;font-size:.88rem}
@@ -131,7 +131,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .rotulo{font:600 .8rem/1.3 var(--f-texto);letter-spacing:.08em}
 .nav ul a{position:relative;padding-block:6px}
 .nav ul a.ativo{color:var(--branco)}
-.nav ul a.ativo::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;background:#7FB0FF}
+.nav ul a.ativo::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;background:#80AEFF}
 .hero{padding-block:48px 36px}
 .hero .wrap{row-gap:40px}
 @media (min-width:921px){.hero .wrap{grid-template-columns:1.4fr .9fr;gap:48px}}
@@ -144,7 +144,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 @keyframes quica{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
 .beneficios{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-top:28px;border-top:1px solid #2A4775}
 .benef{display:grid;justify-items:center;text-align:center;gap:4px}
-.benef svg{width:26px;height:26px;color:#7FB0FF;margin-bottom:6px}
+.benef svg{width:26px;height:26px;color:#80AEFF;margin-bottom:6px}
 .benef b{font:700 1rem/1.3 var(--f-titulo);color:var(--branco)}
 .benef span{color:#C9D4E5;font-size:.95rem}
 .painel{font-family:var(--f-texto);font-size:.92rem}
@@ -158,6 +158,53 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .st.ok{background:rgba(31,169,113,.18);color:#3DD598}
 .st.eco{background:rgba(127,176,255,.15);color:#9CC3FF}
 @media (max-width:600px){.beneficios{grid-template-columns:1fr;gap:20px}.marca img{height:46px}.hero{padding-block:36px 28px}}
+
+/* v3: tipografia Manrope + Inter, paleta padronizada, plano mensal e formulário */
+body{font-size:16.5px;line-height:1.6}
+h1,h2,h3{letter-spacing:-.015em}
+h2{font-size:clamp(1.9rem,3vw,2.4rem);font-weight:700}
+.hero h1{font-weight:700}
+.hero h1 em{display:block}
+.serv h3{font-size:1.3rem}
+.nav ul a{font-size:.95rem;font-weight:600}
+.btn{font-size:.95rem;font-weight:600}
+.modelo{font-size:.85rem;font-weight:600;letter-spacing:0}
+.modelo span{font-weight:400}
+.tag,.painel .tit small{letter-spacing:.06em}
+.serv li::before{border-color:var(--cobalto)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #80AEFF;outline-offset:3px}
+.st.ok{background:rgba(22,168,120,.18);color:#3DD598}
+.cta-painel{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:600;font-size:.92rem;color:#80AEFF;text-decoration:none}
+.cta-painel svg{width:16px;height:16px;transition:transform .2s}
+.cta-painel:hover{color:var(--branco)}
+.cta-painel:hover svg{transform:translateX(3px)}
+.passos{position:relative}
+.passo .n{position:relative;z-index:1;box-shadow:0 0 0 6px var(--nevoa)}
+@media (min-width:921px){.passos::before{content:"";position:absolute;top:19px;left:20px;right:calc((100% - 66px) / 4 - 20px);height:2px;background:#C7D2E3}}
+.plano{padding-block:88px 0}
+.plano-box{background:var(--marinho);color:var(--branco);border-radius:20px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.plano-txt{display:grid;gap:16px;justify-items:start}
+.plano-txt h2{color:var(--branco)}
+.plano-txt .rotulo{color:#80AEFF}
+.plano-txt p{color:#C9D4E5}
+.plano-lista{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.plano-lista li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.plano-lista svg{width:22px;height:22px;color:#80AEFF;margin-top:2px}
+.plano-lista b{display:block;font:700 1.05rem/1.3 var(--f-titulo)}
+.plano-lista span{color:#C9D4E5;font-size:.95rem}
+.form-contato{margin-top:24px;background:var(--marinho-2);border:1px solid #2A4775;border-radius:14px;padding:28px;display:grid;gap:18px}
+.form-contato h3{color:var(--branco)}
+.form-contato p{color:#C9D4E5;margin-top:4px}
+.campos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.campos label{display:grid;gap:6px;font-size:.85rem;font-weight:600;color:#C9D4E5;min-width:0}
+.campos .cheio{grid-column:1/-1}
+.campos input,.campos select,.campos textarea{font:400 1rem/1.4 var(--f-texto);color:var(--branco);background:var(--marinho);border:1px solid #2A4775;border-radius:10px;padding:12px 14px;width:100%}
+.campos textarea{resize:vertical}
+.campos ::placeholder{color:#7D8FAA}
+.form-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.form-contato .aviso{color:#F2B84B;margin:0}
+@media (max-width:920px){.plano-box{grid-template-columns:1fr;padding:32px;gap:32px}.campos{grid-template-columns:1fr}}
+@media (max-width:600px){.plano{padding-block:64px 0}.plano-box{padding:28px 22px}}
 </style>
 </head>
 <body>
@@ -197,6 +244,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <div class="check"><b>7 licenças Microsoft 365 sem uso</b><span class="st eco">Economia potencial</span></div>
       <div class="check"><b>Contratos de fornecedores revisados</b><span class="st ok">Otimizado</span></div>
       <div class="check"><b>Relatórios automatizados</b><span class="st ok">Ativo</span></div>
+      <a class="cta-painel" href="https://wa.me/5511997812985?text=Ol%C3%A1%2C%20quero%20uma%20avalia%C3%A7%C3%A3o%20real%20da%20TI%20da%20minha%20empresa." target="_blank" rel="noopener">Quero uma avaliação real da minha empresa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="beneficios">
       <div class="benef"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><b>Mais segurança</b><span>Proteção de dados e acessos</span></div>
@@ -275,6 +323,25 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   </div>
 </section>
 
+<section class="sec plano" id="plano">
+  <div class="wrap">
+    <div class="plano-box">
+      <div class="plano-txt">
+        <span class="rotulo">Contrato mensal</span>
+        <h2>Um parceiro de TI fixo, com custo previsível</h2>
+        <p>Em vez de pagar por chamado, sua empresa tem uma mensalidade que cobre o acompanhamento contínuo da tecnologia. O escopo é definido a partir do diagnóstico, de acordo com o tamanho e as necessidades da sua operação.</p>
+        <a class="btn btn-verde" href="https://wa.me/5511997812985?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20proposta%20de%20contrato%20mensal%20de%20TI." target="_blank" rel="noopener">Solicitar uma proposta</a>
+      </div>
+      <ul class="plano-lista">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><div><b>Suporte remoto e presencial</b><span>Computadores, notebooks, servidores, rede, Wi-Fi e Microsoft 365.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><div><b>Gestão de fornecedores e licenças</b><span>Contratos, renovações e licenças acompanhados por nós.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><div><b>Segurança contínua</b><span>MFA, backups verificados e políticas de acesso.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><div><b>Reunião mensal de acompanhamento</b><span>Pendências, prioridades e próximos passos em linguagem simples.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <section class="sec sobre" id="sobre">
   <div class="wrap">
     <div class="txt">
@@ -303,6 +370,16 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <a class="cc" href="mailto:samir.ferreira@sftecnologia.com"><small>E-mail</small><b>samir.ferreira@sftecnologia.com</b></a>
       <a class="cc" href="tel:+5511997812985"><small>Telefone</small><b>(11) 99781-2985</b></a>
     </div>
+    <form class="form-contato" id="form-contato" novalidate>
+      <div><h3>Prefere receber uma proposta?</h3><p>Preencha os campos e envie a mensagem pronta pelo WhatsApp.</p></div>
+      <div class="campos">
+        <label for="f-nome">Nome<input id="f-nome" name="nome" autocomplete="name" required></label>
+        <label for="f-empresa">Empresa<input id="f-empresa" name="empresa" autocomplete="organization"></label>
+        <label for="f-pcs">Computadores na empresa<select id="f-pcs" name="pcs"><option>Até 10</option><option>11 a 30</option><option>31 a 100</option><option>Mais de 100</option></select></label>
+        <label for="f-msg" class="cheio">Do que você precisa?<textarea id="f-msg" name="mensagem" rows="3" placeholder="Ex.: suporte mensal, revisão de segurança, licenças Microsoft 365..."></textarea></label>
+      </div>
+      <div class="form-acoes"><button class="btn btn-verde" type="submit">Enviar pelo WhatsApp</button><p class="aviso" id="f-aviso" hidden>Informe seu nome para continuar.</p></div>
+    </form>
   </div>
 </section>
 </main>
@@ -318,6 +395,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 if(!('IntersectionObserver' in window))return;
 var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('ativo');});var a=map[e.target.id];if(a)a.classList.add('ativo');}});},{rootMargin:'-45% 0px -50% 0px'});
 Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)obs.observe(s);});})();
+</script>
+<script>
+(function(){var f=document.getElementById('form-contato');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();
+var nome=document.getElementById('f-nome').value.trim(),emp=document.getElementById('f-empresa').value.trim(),pcs=document.getElementById('f-pcs').value,msg=document.getElementById('f-msg').value.trim(),av=document.getElementById('f-aviso');
+if(!nome){av.hidden=false;document.getElementById('f-nome').focus();return;}av.hidden=true;
+var t='Olá, gostaria de uma proposta da SF Tecnologia.\nNome: '+nome+(emp?'\nEmpresa: '+emp:'')+'\nComputadores: '+pcs+(msg?'\nNecessidade: '+msg:'');
+window.open('https://wa.me/5511997812985?text='+encodeURIComponent(t),'_blank','noopener');});})();
 </script>
 </body>
 </html>
