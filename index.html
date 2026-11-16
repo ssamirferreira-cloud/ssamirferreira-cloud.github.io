@@ -205,6 +205,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .form-contato .aviso{color:#F2B84B;margin:0}
 @media (max-width:920px){.plano-box{grid-template-columns:1fr;padding:32px;gap:32px}.campos{grid-template-columns:1fr}}
 @media (max-width:600px){.plano{padding-block:64px 0}.plano-box{padding:28px 22px}}
+
+/* v4: rodapé com documentos legais */
+footer .rodape{display:grid;gap:14px;justify-content:stretch;padding-block:36px 28px}
+.rod-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.rod-marca{font:700 1.15rem/1.2 var(--f-titulo);color:var(--branco)}
+.rod-selo{display:inline-flex;align-items:center;gap:8px;color:#80AEFF;font-size:.85rem;font-weight:500}
+.rod-selo svg{width:18px;height:18px}
+.rodape p{margin:0;color:#C9D4E5}
+.rod-links{display:flex;flex-wrap:wrap;gap:8px 28px;padding-top:18px;margin-top:4px;border-top:1px solid #24395A}
+.rod-links a{color:#C9D4E5;text-decoration:none;font-size:.88rem}
+.rod-links a:hover{color:var(--branco);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -385,9 +396,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 </main>
 
 <footer>
-  <div class="wrap">
-    <span>© 2026 SF Tecnologia. Todos os direitos reservados.</span>
-    <span>sftecnologia.com</span>
+  <div class="wrap rodape">
+    <div class="rod-top"><span class="rod-marca">SF Tecnologia</span><span class="rod-selo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Site sem cookies de rastreamento</span></div>
+    <p>© 2026 SF Tecnologia. Todos os direitos reservados.</p>
+    <nav class="rod-links" aria-label="Documentos legais"><a href="privacidade.html#privacidade">Política de Privacidade</a><a href="privacidade.html#cookies">Política de Cookies</a><a href="privacidade.html#termos">Termos de Uso</a></nav>
   </div>
 </footer>
 <script>
